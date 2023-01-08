@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Header';
+    src: url(UniNeue-Trial-Regular.ttf);
+
+    font-family: 'New';
+    src: url(Vogue.ttf);
+}
+
+@font-face {
+    font-family: 'diac';
+    src: url(/BLKCHCRY.TTF);
+}
+
+@font-face {
+    font-family: 'cc';
+    src: url(/QueensidesMedium-x30zV.ttf);
+}
+
+@font-face {
+    font-family: 'Test';
+    src: url(/FontypeHand-Yz55o.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    background: linear-gradient(-45deg,#F5EA5A ,#FF7B54,#FF78F0);
+    background-size: 400% 400%;
+    animation: breath 10s ease-in-out infinite;
+
+    
+}
+
+.Title{
+    
+    
+    display: flex;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'diac', 'sans-serif' ;
+    color: #FA7070;
+    transform: translate( 35%, 150%);
+    animation: title 10s ease-in-out infinite;
+
+}
+
+.Title:hover{
+
+    cursor: none;
+}
+
+.F{
+    font-size: 70px;
+}
+
+.S{
+    font-size: 30px;
+}
+
+.description{
+ 
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    transform: translate(125%, 350%);
+    font-family: 'Test', sans-serif ;
+    color: #FFE3D8;
+    letter-spacing: 0.5px;
+
+}
+
+.Input{
+
+    font-family: Bebas Neue;
+    display: inline-block;
+    transform: translate(15%,640%);
+
+}
+
+#but{
+
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+    display: inline-block;
+    transform: translate(50%,-9px);
+    padding: 0px 10px 0px 10px;
+}
+
+.FirstInput{
+    
+    border: none;
+    width: 150px; 
+    height: 30px; 
+    position: relative; 
+    bottom: 7px;
+    font-family: 'Bebas Neue'; 
+    padding-left: 5px;
+    padding-bottom: 0px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.SecondInput{
+
+    border: none;
+    width: 150px; 
+    height: 30px; 
+    position: relative; 
+    bottom: 7px; 
+    font-family: 'Bebas Neue';
+    padding-left: 5px;
+    padding-bottom: 0px;
+    font-size: 25px;
+}
+
+.SecondInput:hover{
+    border: none;
+}
+
+
+
+#output{
+
+    color: black;
+    font-family: 'Test', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    transform: translate(41%, 275px );
+}
+
+@keyframes breath {
+
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@keyframes title {
+    0%{
+     
+       color: #F5EA5A;
+    }
+    25%{
+        color: #A31ACB;
+    }
+    50%{
+        color: #FF7B54;
+    }
+    75%{
+        color: #B9005B;
+
+    }
+    85%{
+        color: #FF8FB1;
+    }
+    100%{
+    color: #F5EA5A ;
+    }
+
+    
+}
+
+.cc{
+
+    font-family:'cc';
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    transform: translate(15px,-15px);
+}
+
+.zi{
+    z-index: inherit;
+}
